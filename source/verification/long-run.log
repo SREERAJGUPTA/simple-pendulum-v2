@@ -1,0 +1,23 @@
+LOAD
+L
+g
+Releaseangle
+Damping
+rate before SPEED
+0.1×
+0.25×
+0.5×
+1×
+rate .25 set
+rate 1 set
+20 selected
+start
+result MEASURED AVERAGE PERIOD
+0.629 s
+One complete
+back-and-forth. Time
+1 oscillation
+5 oscillations
+10 oscillations
+20 oscillations
+20 / 20 cycles

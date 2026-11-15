@@ -1,0 +1,46 @@
+TIME IN MOTION - SAKURA ATELIER / VERSION 2
+
+THE QUICKEST ROUTE
+Open Time-in-Motion-Sakura.html in a current browser. It embeds the complete
+application; the core experience does not need internet or an installation.
+The managed test browser rendered these HTML contents offline, but blocked
+direct file navigation. If your browser blocks local files, use the route below.
+
+LOCAL SITE PREVIEW
+With Node 22+ installed, open a terminal in this extracted folder and run:
+
+node scripts/serve.mjs
+
+Open the loopback address it prints. No npm install is needed for this preview.
+The server serves the already-built docs directory. Press Ctrl+C to stop it.
+
+REPOSITORY / GITHUB PAGES
+The docs folder is complete and prebuilt. Keep it directly under your repository
+root. For branch-based Pages publishing, select that branch and /docs.
+Do not select the root development index.html as the static entry.
+Keep .nojekyll, the src folder INSIDE docs, and the vendor folder INSIDE docs.
+
+SOURCE EDITING
+src/ is the editable React/TypeScript application. vendor/ contains the pinned,
+licensed local runtime. scripts/ builds, packages and tests it.
+To rebuild after installing dependencies: npm ci, then npm run build.
+To rerun numerical/storage tests: npm test.
+
+FIRST CLASSROOM WALKTHROUGH
+1. Enter the laboratory. Pull the bob to one side and release.
+2. Try the small-angle ghost at 5 degrees, then at 70 degrees.
+3. Choose Advanced mechanics for velocity, acceleration, phase and decay graphs.
+4. Open "Find the hidden g". Measure several lengths and record each trial.
+5. Visit the notebook to infer g and find a seconds-pendulum length.
+6. Read The mechanics, The real-lab bridge, Grade 12 & beyond, and Test your intuition.
+
+IMPORTANT BOUNDARIES
+The previous hosted website has NOT been updated by this package.
+The Three.js scene is implemented but WebGL was unavailable in the test browser.
+Actual browser checks exercised the automatic SVG fallback. No GPU performance
+or real-device touch certification is claimed. Rendering is PBR, not ray tracing.
+The electric-field and driven-resonance explorers are separate models; neither
+changes the forces in the main nonlinear pendulum.
+
+Full results, limitations, scientific assumptions and sources: README.md and
+verification/REPORT.md. Export CSV before moving between sites or devices.

@@ -1,0 +1,19 @@
+{
+  "mode": "release",
+  "errors": [
+    "R4: critical check not passed: C10",
+    "R4: critical check not passed: C11",
+    "R5: critical check not passed: C12",
+    "R5: critical check not passed: C13",
+    "R5: critical check not passed: C14",
+    "Required release gate has no passed evidence: geometry",
+    "Required release gate has no passed evidence: graphics",
+    "Required release gate has no passed evidence: persistence"
+  ],
+  "warnings": [
+    "Structural and byte-integrity checks cannot establish scientific truth or authentic observation."
+  ],
+  "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+  "requirements": 5,
+  "checks": 14
+}

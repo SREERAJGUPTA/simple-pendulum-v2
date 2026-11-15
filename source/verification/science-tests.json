@@ -1,0 +1,216 @@
+{
+  "runner": "Project offline synchronous assertion runner (not Vitest)",
+  "date": "2026-11-14T17:02:13.490Z",
+  "passed": 52,
+  "total": 52,
+  "checks": [
+    {
+      "name": "the declared model and domain / rejects NaN, infinity, missing values and out-of-domain parameters",
+      "status": "passed"
+    },
+    {
+      "name": "the declared model and domain / starts at rest; restores toward the downward vertical; does not mutate inputs",
+      "status": "passed"
+    },
+    {
+      "name": "the declared model and domain / keeps exact equilibrium stationary without inventing measured periods",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / matches the hand-derived 1 m Earth small-angle period and a tiny-amplitude observation",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / matches independent finite-angle quadrature at 5°",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / matches independent finite-angle quadrature at 30°",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / matches independent finite-angle quadrature at 60°",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / matches independent finite-angle quadrature at 80°",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / makes large-amplitude cycles longer, with the correct small-amplitude limit",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / preserves the square-root length and gravity scaling",
+      "status": "passed"
+    },
+    {
+      "name": "period reference checks / does not invent cycles for the allowed low-gravity overdamped case",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / uses pivot-to-centre length and a bottom-zero potential reference",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / conserves undamped mechanical energy over 120 simulated seconds at the fastest setting",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / transfers mechanical energy into independently integrated dissipated energy",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / converges under timestep halving against an independently analytic linear limit",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / agrees with the damped small-angle analytic solution using this γ convention",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / makes dynamics independent of mass at fixed γ while energy scales with mass",
+      "status": "passed"
+    },
+    {
+      "name": "energy and numerical integration / produces identical simulated state regardless of playback/render batching",
+      "status": "passed"
+    },
+    {
+      "name": "measurement integrity / interpolates same-direction crossings and excludes half-cycles and duplicate samples",
+      "status": "passed"
+    },
+    {
+      "name": "measurement integrity / fits measured T² versus L with a free intercept and infers g from the slope",
+      "status": "passed"
+    },
+    {
+      "name": "measurement integrity / refuses insufficient, singular, invalid and nonphysical fits",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / round-trips full trial conditions and unrounded measurements without changing the input",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / keeps deployment paths separate while hashes and index.html retain the same notebook",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / keeps the newest 50 observations in order without mutating the caller array",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / recovers from corrupt JSON and unsupported or missing record schemas",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / rejects inconsistent elapsed time, invalid physics and nonfinite squared periods but keeps valid neighbours",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / rejects empty and duplicated IDs without throwing away distinct valid trials",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / accepts harmless floating-point rounding in an otherwise consistent observation",
+      "status": "passed"
+    },
+    {
+      "name": "observation persistence / reports blocked reads and quota failures while leaving the session data exportable",
+      "status": "passed"
+    },
+    {
+      "name": "observation CSV / exports explicit SI-unit columns, signed release angle and independently checked T²",
+      "status": "passed"
+    },
+    {
+      "name": "observation CSV / produces a valid header-only export for an empty notebook",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / linear ghost starts at the same angle from rest in all damping regimes",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / undamped ghost matches a separately calculated harmonic solution",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / damped ghost solves the declared linear differential equation",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / tiny-amplitude RK4 agrees with the ghost across damping regimes",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / ghost rejects negative or nonfinite time",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / bottom-of-swing radial acceleration is nonzero and tension exceeds weight",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / restoring torque and angular acceleration have the restoring sign",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / drag power equals the heat-production rate and is never positive",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / tension stays positive over the allowed 80 degree release domain",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / fits a free-intercept line without mutating observations",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / refuses insufficient and singular line fits",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / uncertainty uses total N-cycle time and a first-order worst-case bound",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / invalid error bounds never yield an infinity or a fabricated interval",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / more timed cycles reduce the assumed timing contribution but not length error",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / horizontal electric field changes equilibrium and effective gravity consistently",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / zero electric force restores the ordinary pendulum formula",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / cancelled effective gravity yields no defined equilibrium or oscillation period",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / electric calculator rejects nonphysical inputs",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / resonance response has the static and natural-frequency limits",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / finite damping shifts the displacement peak below the natural frequency",
+      "status": "passed"
+    },
+    {
+      "name": "Sakura advanced models / the resonance model guards zero damping and invalid ratios",
+      "status": "passed"
+    }
+  ]
+}

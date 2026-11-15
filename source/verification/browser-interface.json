@@ -1,0 +1,180 @@
+{
+  "method": "Headless Chromium set_content of exact standalone artifact, offline network context; SVG fallback",
+  "limitations": [
+    "WebGL context unavailable",
+    "Managed browser prevents localhost and file navigation",
+    "Native storage and hosted service-worker operation not browser-verified",
+    "No physical touch-device or GPU performance validation"
+  ],
+  "periods": [],
+  "checks": [
+    {
+      "name": "Initial page loads without uncaught JavaScript errors",
+      "status": "passed",
+      "detail": "[]"
+    },
+    {
+      "name": "Reduced-motion preference starts the pendulum paused",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Working diagram automatically replaces unavailable WebGL",
+      "status": "passed",
+      "detail": "['svg', 'svg']"
+    },
+    {
+      "name": "Perspective is unavailable rather than a dead control in diagram mode",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Invalid length is rejected visibly",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Valid control value clears the error",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Single-step advances 0.05 simulated seconds",
+      "status": "passed",
+      "detail": "SIMULATED TIME\n0.00 s"
+    },
+    {
+      "name": "Keyboard hold and adjust sets a new release angle",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Keyboard release starts the pendulum",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Pointer drag and release works",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Ghost comparison appears without replacing the nonlinear model",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Live mechanics inspector is present",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "energy graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "angle graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "velocity graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "acceleration graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "phase graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "decay graph is rendered",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Overdamped preset blocks periodic measurement",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Guided tasks preserve the notebook",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Large-angle preset sets 70 degrees",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Incorrect answer receives corrective feedback",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Corrected answer receives positive feedback",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Learning tabs support arrow-key navigation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Zero charge restores ordinary pendulum period",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Strong damping removes the finite-frequency displacement peak",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No page-wide overflow on desktop",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No page-wide horizontal overflow at 390 CSS px",
+      "status": "passed",
+      "detail": "390"
+    },
+    {
+      "name": "Advanced layer reflows at 390 px",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No page-wide horizontal overflow at 340 CSS px",
+      "status": "passed",
+      "detail": "340"
+    },
+    {
+      "name": "Advanced layer reflows at 340 px",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "No uncaught JavaScript errors across all workflows",
+      "status": "passed",
+      "detail": "[]"
+    },
+    {
+      "name": "Standalone runtime needs no HTTP or HTTPS requests",
+      "status": "passed",
+      "detail": "[]"
+    }
+  ],
+  "passed": 33,
+  "total": 33,
+  "uncaughtErrors": []
+}

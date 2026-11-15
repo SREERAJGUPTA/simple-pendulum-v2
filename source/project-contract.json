@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "project": {
+    "title": "Simple Pendulum - Time in Motion | Sakura Atelier v2",
+    "audience": "Grade 11 mechanics learners and teachers; optional Grade 12 connections/enrichment",
+    "outcome": "Collect measured periods, estimate g from a graph and explain approximation, damping and measurement error."
+  },
+  "identity": {
+    "direction": "Sakura Atelier - Cinematic Scientific Minimalism",
+    "composition": "Ivory architectural opening, brass pendulum, rose editorial title, focused laboratory and field notebook",
+    "interaction": "Drag or keyboard-position a bob, release, time, record and compare",
+    "signature": "An analytic small-angle ghost diverges from the true nonlinear motion; actual observations replay their conditions",
+    "distinction": "A rebuilt warm editorial mechanics experience rather than the original navy observatory; expanded phase, uncertainty and Grade 12 connection panels."
+  },
+  "model": {
+    "scope": "Nonlinear released-from-rest point-mass pendulum, angular damping; linearized ghost and separate advanced calculators",
+    "units": "SI metres, seconds, kilograms, radians; UI angles in degrees",
+    "state": "theta, omega, simulated time, independently integrated heat, validated parameters; separate observations and assessed answers",
+    "assumptions": [
+      "Massless, inextensible suspension and point bob; fixed support and uniform gravity",
+      "Release limited to +/-80 degrees from rest to remain in the taut-string oscillatory domain",
+      "No external driving or electric force in the main motion; advanced calculators are explicitly separate"
+    ],
+    "limitations": [
+      "No slack-string/free-fall/complete rotation",
+      "No air flow, finite bob inertia or support motion",
+      "Real-world timing uncertainty is user-assumed, not a confidence interval or noise simulation"
+    ],
+    "invariants": [
+      {
+        "id": "I1",
+        "statement": "Mass does not alter the motion at fixed gamma; energy and forces scale with mass",
+        "oracle": "Independent equation cancellation and numerical mass cases",
+        "check_ids": [
+          "C1"
+        ]
+      },
+      {
+        "id": "I2",
+        "statement": "Period is a full same-direction crossing interval in simulated seconds",
+        "oracle": "Known small-angle period, independently integrated finite-angle period and crossing interpolation cases",
+        "check_ids": [
+          "C1"
+        ]
+      },
+      {
+        "id": "I3",
+        "statement": "K+U+Q is conserved to numerical error under viscous angular damping",
+        "oracle": "Independent heat rate and energy diagnostics, timestep convergence",
+        "check_ids": [
+          "C1"
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "graphics3d": true,
+    "offline": true,
+    "persistence": true,
+    "performance_claim": false,
+    "assessment": true
+  },
+  "build": {
+    "directory": "docs",
+    "sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327"
+  },
+  "requirements": [
+    {
+      "id": "R1",
+      "description": "Correct nonlinear dynamics and measured periods",
+      "critical": true,
+      "acceptance": "Independent numerical checks pass and timing uses full actual cycles",
+      "check_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "id": "R2",
+      "description": "Sakura design and usable learning workflow",
+      "critical": true,
+      "acceptance": "Actual warm visual frame and essential keyboard/pointer workflows inspected",
+      "check_ids": [
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "R3",
+      "description": "Portable and prebuilt deliverables",
+      "critical": true,
+      "acceptance": "Offline-content runtime, static inventory and local server checks pass",
+      "check_ids": [
+        "C7",
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "R4",
+      "description": "Fully verified 3D scene",
+      "critical": true,
+      "acceptance": "Actual WebGL materials, picking and geometry reviewed on supported hardware",
+      "check_ids": [
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "id": "R5",
+      "description": "Published and persistent hosted release",
+      "critical": true,
+      "acceptance": "New live deployment, browser storage retention and service-worker lifecycle verified",
+      "check_ids": [
+        "C12",
+        "C13",
+        "C14"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "C1",
+      "kind": "science",
+      "status": "passed",
+      "artifact": "verification/science-tests.json",
+      "sha256": "2381ad54dbbf5440fcf480a0e05b255078614c2cfc0326f8a6894f0fb8855790",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "52 numerical, storage-contract and export cases; independent period oracle and step convergence",
+      "environment": "Node offline synchronous assertion harness; local compiled modules"
+    },
+    {
+      "id": "C2",
+      "kind": "workflow",
+      "status": "passed",
+      "artifact": "verification/browser-measurement.json",
+      "sha256": "f3a8cb4a8f326cf3a7ce85c4630cd7fa347faf60045c0523aecfb97d2cb53fc1",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Measure, record, fit, export and preserve actual trials; 23 session assertions",
+      "environment": "Chromium, exact inline HTML, offline, SVG fallback"
+    },
+    {
+      "id": "C3",
+      "kind": "workflow",
+      "status": "passed",
+      "artifact": "verification/long-run.log",
+      "sha256": "bc215640ad4f2af52edd34504452dd48bd52394bc29982b81e2732af704980b9",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Time twenty complete cycles, switching rate back from 0.25x to 1x",
+      "environment": "Chromium, exact inline HTML, SVG fallback"
+    },
+    {
+      "id": "C4",
+      "kind": "accessibility",
+      "status": "passed",
+      "artifact": "verification/browser-interface.json",
+      "sha256": "33f64449ddb65093acc71d60f5f9081fe6a0fa6911e70681e122a9d07443cce8",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Selected keyboard, pointer, focus, reduced-motion and responsive checks; not a full accessibility certification",
+      "environment": "Chromium desktop and 340/390 CSS-pixel viewport emulation"
+    },
+    {
+      "id": "C5",
+      "kind": "assessment",
+      "status": "passed",
+      "artifact": "verification/browser-interface.json",
+      "sha256": "33f64449ddb65093acc71d60f5f9081fe6a0fa6911e70681e122a9d07443cce8",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Submit incorrect then corrected response; observe appropriate explanations",
+      "environment": "Chromium exact inline HTML"
+    },
+    {
+      "id": "C6",
+      "kind": "visual",
+      "status": "passed",
+      "artifact": "verification/sakura-preview.png",
+      "sha256": "f2e47ce16a35970599574efbde9c11b18801926b7e4e9b17df60158af2b9a439",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Inspect actual hero typography, brass diagram, ivory/pink visual composition and petals",
+      "environment": "1440x900 Chromium screenshot; SVG fallback"
+    },
+    {
+      "id": "C7",
+      "kind": "offline",
+      "status": "passed",
+      "artifact": "verification/browser-interface.json",
+      "sha256": "33f64449ddb65093acc71d60f5f9081fe6a0fa6911e70681e122a9d07443cce8",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Exact portable HTML contents run with networking disabled and no essential HTTP(S) requests",
+      "environment": "Chromium set_content; not a file navigation or service-worker lifecycle test"
+    },
+    {
+      "id": "C8",
+      "kind": "deployment",
+      "status": "passed",
+      "artifact": "verification/preflight.json",
+      "sha256": "7b3cbb986f721e6ee407757c9b17f1b8ab175b82c707b882e2d9da85d5a57237",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Static reference, offline inventory hash and Pages directory preflight at representative subpath",
+      "environment": "Python static inspection, not a live deployment"
+    },
+    {
+      "id": "C9",
+      "kind": "workflow",
+      "status": "passed",
+      "artifact": "verification/server-http.json",
+      "sha256": "4b295f3abf2b006354dbf0971dd8405821ec766dc2f63b47a0a6406736bc52d0",
+      "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327",
+      "method": "Node preview server responds to eight essential paths",
+      "environment": "Node loopback HTTP server with Python HTTP client"
+    },
+    {
+      "id": "C10",
+      "kind": "graphics",
+      "status": "blocked",
+      "note": "WebGL unavailable in this browser; no claim of verified 3D rendering or GPU performance."
+    },
+    {
+      "id": "C11",
+      "kind": "geometry",
+      "status": "blocked",
+      "note": "Actual 3D projection, camera/picking and rendered mesh geometry require a WebGL-capable browser."
+    },
+    {
+      "id": "C12",
+      "kind": "deployment",
+      "status": "blocked",
+      "note": "No Sites publishing action is available in this session; previous hosted URL remains unchanged."
+    },
+    {
+      "id": "C13",
+      "kind": "persistence",
+      "status": "blocked",
+      "note": "Native storage reload not tested because direct file/localhost navigation is blocked; only in-memory storage-contract tests passed."
+    },
+    {
+      "id": "C14",
+      "kind": "offline",
+      "status": "blocked",
+      "note": "Hosted service-worker install/update and browser-restart tests require a live secure origin."
+    }
+  ]
+}

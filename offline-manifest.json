@@ -1,0 +1,87 @@
+{
+  "application": "time-in-motion",
+  "version": "1009e8ccc4cd37c47721",
+  "strategy": "Complete release precache; activation on first install, closed old clients, or explicit update approval.",
+  "files": [
+    {
+      "url": "./app/App.js",
+      "sha256": "5447b74befbeed34e8408f415140c8f0b7b897056a0b6a29646c42aa99040840"
+    },
+    {
+      "url": "./app/LearningStudio.js",
+      "sha256": "113a99cc1b1a0cbfcdf44e561109d152ff066101f8df2217d40e9e4f76a6241f"
+    },
+    {
+      "url": "./app/LiveGraph.js",
+      "sha256": "17d2b13db481ff75072907a32665d2fe689094f4f3bf42aa88679d9fdb25059d"
+    },
+    {
+      "url": "./app/PendulumScene.js",
+      "sha256": "e3d4ed685fd8cba1c998a6527ac6067ec97aa41e364b7043bbdfd8db29cde7cb"
+    },
+    {
+      "url": "./app/Petals.js",
+      "sha256": "64b5a2f846ebe412ae9cfe6110a294448e71894947d83699441129b1d088d191"
+    },
+    {
+      "url": "./app/Stopwatch.js",
+      "sha256": "9d938b7cd4325d5ae8934838efe3dcd0848952fb8629aea25e2784331d401dfc"
+    },
+    {
+      "url": "./app/advanced.js",
+      "sha256": "8ad9e42d4e87b2a28b3744eba707ed2e7be6eefd0ae080622a306896fa73789a"
+    },
+    {
+      "url": "./app/main.js",
+      "sha256": "80b31cf40db232d47c510eb4f9efebeacba0c5106433da1cb6645cb6881a3c1b"
+    },
+    {
+      "url": "./app/physics.js",
+      "sha256": "ba42470a9ca13c746abd7aa3613c5623a9d9a59cf0becdea1eb199a8fcb3440a"
+    },
+    {
+      "url": "./app/records.js",
+      "sha256": "349cf5c2e3cd79ad427029a790bd13858d3ef2300bc57324dd01f79eb1888e48"
+    },
+    {
+      "url": "./app/types.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "url": "./app/usePendulum.js",
+      "sha256": "767774883452d402cf988fee041e79e2537b66d3a3f9d3db1b72ebd34016eca0"
+    },
+    {
+      "url": "./favicon.svg",
+      "sha256": "16711fcee042dd4278ce2a919dad95644caac3b216a53f92d1f5705373e44400"
+    },
+    {
+      "url": "./index.html",
+      "sha256": "e3a550fbba7658c066f0067bbf9b2bd0cacddcf610572c3065f8df06dfe16fa4"
+    },
+    {
+      "url": "./manifest.webmanifest",
+      "sha256": "3c45d6cbfaaec6ffe416848d8c17893e17dbab87c395a818a0215dc44f3dc121"
+    },
+    {
+      "url": "./styles.css",
+      "sha256": "3fa98c88107d6b422f7cad7e577d4c186a29cb361d3996d7d8f941d3399cac59"
+    },
+    {
+      "url": "./third-party-notices.txt",
+      "sha256": "14d8482c64d90798ce1300cd681b94f578d06e41510f5f10b7146bd0ec648d8e"
+    },
+    {
+      "url": "./vendor/react-runtime.js",
+      "sha256": "26d947df0baf72f828b280116c48b4ec103c5462469f412b649e583cc4fdbb6f"
+    },
+    {
+      "url": "./vendor/three-core.js",
+      "sha256": "444f281027e5d99fd21f761e41777b8e6fd2f7abe8a460bede45119dbed55ce8"
+    },
+    {
+      "url": "./vendor/three.js",
+      "sha256": "ef9f4361ae71d64dbb6e863f82593dd691e863995b58668a3a04d7eac3ae0404"
+    }
+  ]
+}

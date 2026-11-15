@@ -1,0 +1,53 @@
+{
+  "method": "Python HTTP client to loopback-only Node preview; not a browser route or service-worker test",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 735,
+      "mime": "text/html;charset=utf-8"
+    },
+    {
+      "path": "/app/main.js",
+      "status": 200,
+      "bytes": 297,
+      "mime": "text/javascript;charset=utf-8"
+    },
+    {
+      "path": "/app/PendulumScene.js",
+      "status": 200,
+      "bytes": 41123,
+      "mime": "text/javascript;charset=utf-8"
+    },
+    {
+      "path": "/vendor/three.js",
+      "status": 200,
+      "bytes": 683,
+      "mime": "text/javascript;charset=utf-8"
+    },
+    {
+      "path": "/vendor/three-core.js",
+      "status": 200,
+      "bytes": 485273,
+      "mime": "text/javascript;charset=utf-8"
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes": 44089,
+      "mime": "text/css;charset=utf-8"
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "bytes": 7718,
+      "mime": "text/javascript;charset=utf-8"
+    },
+    {
+      "path": "/offline-manifest.json",
+      "status": 200,
+      "bytes": 2826,
+      "mime": "application/json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Time in Motion - Sakura Atelier",
+  "short_name": "Time in Motion",
+  "description": "Explore a pendulum, measure its period, and trace the transfer of energy.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#f8f5ef",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

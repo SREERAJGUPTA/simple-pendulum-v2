@@ -1,0 +1,143 @@
+{
+  "method": "Headless Chromium set_content of exact standalone artifact, offline network context; SVG fallback",
+  "limitations": [
+    "WebGL context unavailable",
+    "Managed browser prevents localhost and file navigation",
+    "Native storage and hosted service-worker operation not browser-verified",
+    "No physical touch-device or GPU performance validation"
+  ],
+  "periods": [
+    {
+      "length": 0.5,
+      "period": 1.419
+    },
+    {
+      "length": 1,
+      "period": 2.007
+    },
+    {
+      "length": 1.5,
+      "period": 2.458
+    }
+  ],
+  "checks": [
+    {
+      "name": "Initial page loads without uncaught JavaScript errors",
+      "status": "passed",
+      "detail": "[]"
+    },
+    {
+      "name": "Reduced-motion preference starts the pendulum paused",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Working diagram automatically replaces unavailable WebGL",
+      "status": "passed",
+      "detail": "['svg', 'svg']"
+    },
+    {
+      "name": "Perspective is unavailable rather than a dead control in diagram mode",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Invalid length is rejected visibly",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Valid control value clears the error",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Measurement and notebook recording at 0.5 m",
+      "status": "passed",
+      "detail": "1.419"
+    },
+    {
+      "name": "A completed measurement pauses the simulation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Duplicate record is disabled",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Measurement and notebook recording at 1 m",
+      "status": "passed",
+      "detail": "2.007"
+    },
+    {
+      "name": "A completed measurement pauses the simulation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Duplicate record is disabled",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Measurement and notebook recording at 1.5 m",
+      "status": "passed",
+      "detail": "2.458"
+    },
+    {
+      "name": "A completed measurement pauses the simulation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Duplicate record is disabled",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Gravity inferred from three measured periods",
+      "status": "passed",
+      "detail": "YOUR ESTIMATE OF g\n9.80 m/s\u00b2\nFrom 3 measured trials \u00b7 R\u00b2 = 1.00000"
+    },
+    {
+      "name": "Alternative linearized fit works",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Nonlinear notebook view does not invent a straight-line fit",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Uncertainty calculator uses the measured trial",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "CSV export contains three genuine observations with units",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Clear notebook removes session rows",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Undo restores recorded rows",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "Quarter-speed timing preserves the period",
+      "status": "passed",
+      "detail": "0.629"
+    }
+  ],
+  "passed": 23,
+  "total": 23,
+  "uncaughtErrors": []
+}

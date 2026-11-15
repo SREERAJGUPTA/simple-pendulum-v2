@@ -1,0 +1,4 @@
+trial,length_m,gravity_m_s2,damping_s-1,mass_kg,release_angle_deg,cycles,elapsed_simulated_s,period_s,period_squared_s2
+1,0.500,9.810,0.000,0.500,5.00,1,1.419179,1.419179,2.014069
+2,1.000,9.810,0.000,0.500,5.00,1,2.007022,2.007022,4.028137
+3,1.500,9.810,0.000,0.500,5.00,1,2.458090,2.458090,6.042205

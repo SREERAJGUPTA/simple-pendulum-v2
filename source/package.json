@@ -1,0 +1,33 @@
+{
+  "name": "simple-pendulum-sakura-atelier",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs && node scripts/standalone.mjs",
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "develop": "vite --host 127.0.0.1",
+    "build:bundled": "tsc --noEmit && vite build && node scripts/package-offline.mjs",
+    "check": "tsc --noEmit",
+    "test": "node scripts/build.mjs && node scripts/test.mjs",
+    "test:vitest": "vitest run"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@types/three": "0.180.0",
+    "typescript": "5.9.2",
+    "vite": "7.1.7",
+    "vitest": "3.2.4"
+  }
+}

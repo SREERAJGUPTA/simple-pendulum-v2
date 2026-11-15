@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "warnings": [
+    "Does not execute JS, resolve computed/lazy imports, fully parse CSS/srcset, verify worker lifecycle, or prove visual/accessibility/offline behavior. Run browser tests."
+  ],
+  "base": "/pendulum-sakura/",
+  "build_sha256": "4e82b2094e1856d8956f4f6b1582b1eca4ba58e1e90c8d7caa183909e7774327"
+}
